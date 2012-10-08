@@ -1,7 +1,7 @@
 <h1>Zombies</h1>
 
 <ul>
-  <%= @zombies.each do |zombie| %>
+  <%- @zombies.each do |zombie| %>
     <li><%= link_to zombie.name, zombie_path(zombie) %></li>
   <% end %>
 </ul>
